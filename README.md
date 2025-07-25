@@ -9,6 +9,7 @@ Afrilore is a full-stack MERN web application designed to promote the consumptio
 🔗 [Frontend Live on Vercel](https://afrilore-infinite-tales.vercel.app/)  
 🔗 [Backend Live on Render](https://afrilore-infinite-tales.onrender.com/)  
 📝 [Project Walkthrough Video](https://www.loom.com/share/cd54114724a6440e97cde219dfa1f1a1?sid=81b6dc9c-bace-46a6-81f7-e6362b0c2d3a)
+📝 [Pitch Deck site](https://andiswacyriam.my.canva.site/afrilore-books-pitch-deck-presentation)
 
 ---
 
