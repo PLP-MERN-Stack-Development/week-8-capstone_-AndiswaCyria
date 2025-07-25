@@ -1,52 +1,146 @@
-# MERN Stack Capstone Project
+# 📚 Afrilore – African Literature Streaming & Support Platform
 
-This assignment focuses on designing, developing, and deploying a comprehensive full-stack MERN application that showcases all the skills you've learned throughout the course.
+Afrilore is a full-stack MERN web application designed to promote the consumption of African literature by connecting readers with books and emerging African authors. The platform includes a subscription-based free library, an AI-powered Help Center, and a real-time Live Chat feature for immediate support and engagement.
 
-## Assignment Overview
+---
 
-You will:
-1. Plan and design a full-stack MERN application
-2. Develop a robust backend with MongoDB, Express.js, and Node.js
-3. Create an interactive frontend with React.js
-4. Implement testing across the entire application
-5. Deploy the application to production
+## 🚀 Live Demo
 
-## Getting Started
+🔗 [Frontend Live on Vercel](https://afrilore-infinite-tales.vercel.app/)  
+🔗 [Backend Live on Render](https://afrilore-infinite-tales.onrender.com/)  
+📝 [Project Walkthrough Video](https://www.loom.com/share/cd54114724a6440e97cde219dfa1f1a1?sid=81b6dc9c-bace-46a6-81f7-e6362b0c2d3a)
 
-1. Accept the GitHub Classroom assignment
-2. Clone the repository to your local machine
-3. Follow the instructions in the `Week8-Assignment.md` file
-4. Plan, develop, and deploy your capstone project
+---
 
-## Files Included
+## 📌 Features
 
-- `Week8-Assignment.md`: Detailed assignment instructions
+### 🌍 General
+- Responsive multi-page React app
+- Clean, accessible UI with light/dark modes
+- Client-side routing with `react-router-dom`
+- 404 NotFound page handling
 
-## Requirements
+### 🧠 Help Center
+- AI-powered chatbot for instant responses
+- Searchable Help Center articles
+- Structured layout for FAQs
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git and GitHub account
-- Accounts on deployment platforms (Render/Vercel/Netlify/etc.)
+### 💬 Live Chat (Real-Time)
+- Socket.io integration
+- Real-time messaging between user and bot
+- Delivery notifications & connection status
 
-## Project Ideas
+### 📖 Free Library
+- View sample books and genres
+- Modular JSON structure for books
+- Subscription prompt for full access
 
-The `Week8-Assignment.md` file includes several project ideas, but you're encouraged to develop your own idea that demonstrates your skills and interests.
+### 🔒 Authentication
+- Basic auth setup with secure backend routes
+- Future-ready for JWT integration
 
-## Submission
+---
 
-Your project will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## 🧱 Tech Stack
 
-1. Commit and push your code regularly
-2. Include comprehensive documentation
-3. Deploy your application and add the live URL to your README.md
-4. Create a video demonstration and include the link in your README.md
+### Frontend
+- React.js + Vite
+- React Router DOM
+- Socket.io Client
+- Axios for API calls
+- Custom CSS
 
-## Resources
+### Backend
+- Express.js
+- MongoDB Atlas
+- Socket.io
+- Dotenv, CORS, Middleware
+- Modular route handling
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [GitHub Classroom Guide](https://docs.github.com/en/education/manage-coursework-with-github-classroom) 
+---
+
+## 📂 Folder Structure
+
+```bash
+afrilore/
+├── frontend/            # React frontend 
+    ├── pages/
+│   ├── pages/           # LiveChat, HelpCenter, Home, NotFound
+│   ├── components/      # Navbar, Footer, ChatBot, etc.
+│   └── App.jsx
+├── backend/             # Express backend
+│   ├── routes/          # /chat, /auth, /books
+│   ├── controllers/
+│   ├── data/            # freeLibrary.js, previewBooks.js
+│   ├── models/
+│   └── server.js
+```
+
+---
+
+## 🔧 Setup Instructions
+
+### 1. Clone the Repo
+```bash 
+git clone https://github.com/AndiswaCyria/afrilore-infinite-tales.git
+cd afrilore
+```
+
+### 2. Install Dependencies
+- Frontend 
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+- Backend 
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### 3. Environment Variables (.env)
+In /backend/.env 
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_atlas_connection_string
+```
+---
+
+### 🧪 Testing
+Manual testing of routes and Socket.io in development
+
+Postman tested backend endpoints
+
+Browser-based UI testing
+
+---
+
+### 📝 Known Issues
+Bot responses in Live Chat can be expanded with AI APIs
+
+Authentication is basic and needs token integration for production
+
+Help Center search is static (consider Algolia/Fuse.js in future)
+
+---
+
+### 📚 Future Improvements
+- Full book streaming with PDF viewer
+
+- Payment gateway for premium subscription
+
+- AI-powered book recommendations
+
+- Admin dashboard for content management
+
+- Email support and user feedback collection
+
+---
+
+### 👩🏽‍💻 Author
+Cyria Molangathi
+📧 [andiswacyriam@gmail.com]
+🌐 https://www.linkedin.com/in/andiswa-cyria-molangathi/
